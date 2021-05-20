@@ -12,6 +12,7 @@ public class FabricUtilConfig implements ConfigData {
     int yRange = 5;
     int xzRange = 20;
     Boolean diamond = true;
+    Boolean netherite = true;
     Boolean gold = false;
     Boolean iron = false;
     Boolean lapis = false;

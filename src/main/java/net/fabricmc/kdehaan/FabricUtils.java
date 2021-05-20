@@ -46,6 +46,7 @@ public class FabricUtils implements ClientModInitializer {
 	public HashMap<String, SearchType> blockMappings = new HashMap() {{
 		try {
 			put("diamond ore", new SearchType(Blocks.DIAMOND_ORE, FabricUtilConfig.class.getDeclaredField("diamond")));
+			put("ancient debris", new SearchType(Blocks.ANCIENT_DEBRIS, FabricUtilConfig.class.getDeclaredField("netherite")));
 			put("gold ore", new SearchType(Blocks.GOLD_ORE, FabricUtilConfig.class.getDeclaredField("gold")));
 			put("iron ore", new SearchType(Blocks.IRON_ORE, FabricUtilConfig.class.getDeclaredField("iron")));
 			put("lapis lazuli", new SearchType(Blocks.LAPIS_ORE, FabricUtilConfig.class.getDeclaredField("lapis")));
