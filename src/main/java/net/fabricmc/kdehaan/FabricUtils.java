@@ -10,7 +10,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.options.KeyBinding;
+//import net.minecraft.client.options.KeyBinding;
+import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.entity.Entity;
 import net.minecraft.text.LiteralText;
@@ -137,7 +138,7 @@ public class FabricUtils implements ClientModInitializer {
 	}
 
 	private String getDirection(String blockType, BlockPos block) {
-		int dir = getCardinalFacing(mc.player.yaw);
+		int dir = getCardinalFacing(mc.player.headYaw);
 		BlockPos playerPos = mc.player.getBlockPos();
 		if (getManhattanDistance(block, playerPos) < 1) {
 			return "";
